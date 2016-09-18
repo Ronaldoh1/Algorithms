@@ -1,5 +1,12 @@
-//: Playground - noun: a place where people can play
+//Swift implementation of linear search. 
 
-import UIKit
 
-var str = "Hello, playground"
+func linearSearch<T: Equatable>(_ a: [T], _ key: T) -> Int? {
+    
+    for i in 0..<a.count {
+        if a[i] == key {
+            return i
+        }
+    }
+    return nil
+}
